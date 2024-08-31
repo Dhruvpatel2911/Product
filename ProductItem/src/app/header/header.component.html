@@ -1,0 +1,19 @@
+
+<div class="header-container">
+    <div class="text">
+        <h2>Products</h2>
+    </div>
+    <div class="filter-container">
+      <label for="filter" class="label">Filter:</label>
+      <input id="filter" type="text" [(ngModel)]="filterTerm" (input)="onFilterChange()" class="input-field" placeholder="Type Here...">
+    </div>
+  
+    <div class="sort-container">
+      <label for="sort" class="label">Sort:</label>
+      <select id="sort" [(ngModel)]="sortOrder" (change)="onSortChange()" class="select-field">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+    </div>
+  </div>
+  
